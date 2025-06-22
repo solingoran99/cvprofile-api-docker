@@ -38,11 +38,10 @@ Data is stored in a SQL Server database running inside a container.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download)
 
-Step-by-Step Guide
+## Step-by-Step Guide
 
 1. Clone the repo:
 
-```bash
 git clone https://github.com/solingoran99/cvprofile-api-docker.git
 cd cvprofile-api-docker
 
@@ -78,5 +77,19 @@ Data was originally stored in MongoDB but migrated manually into SQL Server for 
 API is fully functional via Swagger.
 
 Migrations define tables: Projects, Skills.
+
+
+## Theory – Cost and Capacity Comparison
+
+
+Using Docker containers for this project is usually cheaper and easier than using two virtual machines (VMs). 
+Containers are lighter because they share the same system, so they start faster and use less memory. In a cloud service like Azure, you could run both the web app and the database in containers, which would save money. 
+It’s also easier to update and manage everything when it’s inside containers.
+
+
+
+If you used two VMs instead (one for the app and one for the database), it would cost more because each VM needs its own full system. 
+For example, small VMs on Azure might cost about €10–15 per month each, so two would be €20–30. Also, saving 25 GB of hot data for two weeks and then storing it for 6 months would cost more on VMs than using storage rules in the cloud. 
+So, for a small project like this, containers are better and cheaper.
 
 
