@@ -1,0 +1,6 @@
+@CVProfileAPI_HostAddress = http://localhost:5231
+
+GET {{CVProfileAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
