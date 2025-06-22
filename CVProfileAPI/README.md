@@ -1,4 +1,4 @@
-﻿#CVProfile API – Dockerized ASP.NET Core Project
+﻿## CVProfile API – Dockerized ASP.NET Core Project
 
 This project is a personal CV Profile API that I previously created using ASP.NET Core.  
 For this assignment, I adapted and Dockerized the application by adding:
@@ -11,7 +11,7 @@ The goal was to make the app portable and easily deployable with Docker.
 
 ---
 
-#Technologies Used
+# Technologies Used
 
 - ASP.NET Core 8.0
 - Entity Framework Core
@@ -21,7 +21,7 @@ The goal was to make the app portable and easily deployable with Docker.
 
 ---
 
-#Functionality
+# Functionality
 
 The API exposes endpoints to manage:
 - `Projects` (title, description)
@@ -31,7 +31,7 @@ Data is stored in a SQL Server database running inside a container.
 
 ---
 
-#How to Run Locally with Docker
+# How to Run Locally with Docker
 
  Prerequisites
 
